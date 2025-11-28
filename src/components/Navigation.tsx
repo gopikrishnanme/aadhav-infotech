@@ -37,7 +37,7 @@ export default function Navigation({ currentPage, onNavigate }: NavigationProps)
               <img
                 src={logo}
                 alt="Aadhav Infotech"
-                className="h-10 w-auto rounded-lg shadow-sm group-hover:shadow-md transition-shadow"
+                className="h-14 w-auto rounded-lg shadow-sm group-hover:shadow-md transition-shadow"
               />
             </button>
           </div>

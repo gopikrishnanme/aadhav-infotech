@@ -1,4 +1,4 @@
-import { Target, Lightbulb, Award, Code, Cpu, Globe, Users, Briefcase, CheckCircle, Star, Quote, Rocket, ArrowRight } from 'lucide-react';
+import { Target, Lightbulb, Award, Code, Cpu, Globe, Users, Briefcase, CheckCircle, Star, Quote, ArrowRight } from 'lucide-react';
 
 interface HomeProps {
   onNavigate?: (page: string) => void;
@@ -44,8 +44,8 @@ export default function Home({ onNavigate }: HomeProps) {
     <div className="overflow-hidden">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-brand-dark via-brand-mid to-brand-dark text-white py-24 px-4 overflow-hidden">
-        {/* Abstract Pattern Background */}
-        <div className="absolute inset-0 opacity-10">
+        {/* Abstract Pattern Background - Contained Width */}
+        <div className="absolute inset-y-0 left-1/2 -translate-x-1/2 w-full max-w-4xl opacity-10">
           <div className="absolute top-10 left-10 w-32 h-32 border border-white/20 rounded-full" />
           <div className="absolute top-40 right-20 w-24 h-24 border border-white/20 rounded-full" />
           <div className="absolute bottom-20 left-1/4 w-40 h-40 border border-white/20 rounded-full" />
@@ -67,11 +67,6 @@ export default function Home({ onNavigate }: HomeProps) {
         </div>
         
         <div className="max-w-7xl mx-auto text-center relative z-10">
-          <div className="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full mb-6 border border-white/20">
-            <span className="w-2 h-2 bg-brand-green rounded-full mr-2 animate-pulse" />
-            <span className="text-sm font-medium">Welcome to Aadhav Infotech</span>
-          </div>
-          
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
             A Smarter Way to
             <span className="block text-brand-green">IT Services</span>
@@ -80,23 +75,6 @@ export default function Home({ onNavigate }: HomeProps) {
           <p className="text-xl md:text-2xl text-white/80 max-w-3xl mx-auto mb-10">
             Reaching Technology To Common Man — Empowering businesses with innovative software solutions
           </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button 
-              onClick={() => handleNavigate('services')}
-              className="group px-8 py-4 bg-brand-green text-white font-semibold rounded-full hover:bg-brand-green-hover hover:shadow-2xl hover:shadow-brand-green/30 transition-all duration-300 flex items-center justify-center space-x-2"
-            >
-              <Rocket size={20} />
-              <span>Get Started</span>
-              <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-            </button>
-            <button 
-              onClick={() => handleNavigate('innovation')}
-              className="px-8 py-4 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-full border border-white/30 hover:bg-white/20 transition-all duration-300"
-            >
-              Learn More
-            </button>
-          </div>
         </div>
         
         {/* Wave Separator */}
