@@ -196,10 +196,13 @@ export default function Innovation() {
           <p className="text-xl text-white/80 mb-8">
             Let's innovate together and build the future of technology.
           </p>
-          <button className="group px-8 py-4 bg-brand-green text-white font-semibold rounded-full hover:bg-brand-green-hover hover:shadow-2xl hover:shadow-brand-green/30 transition-all duration-300 flex items-center space-x-2 mx-auto">
+          <a 
+            href="mailto:services@aadhavinfotech.in?subject=Start a Project"
+            className="group px-8 py-4 bg-brand-green text-white font-semibold rounded-full hover:bg-brand-green-hover hover:shadow-2xl hover:shadow-brand-green/30 transition-all duration-300 flex items-center space-x-2 mx-auto inline-flex"
+          >
             <span>Start a Project</span>
             <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-          </button>
+          </a>
         </div>
       </section>
     </div>

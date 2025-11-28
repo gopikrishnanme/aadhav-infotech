@@ -44,7 +44,7 @@ export default function Contact() {
     {
       icon: Phone,
       title: 'Call Us',
-      content: ['+91 XXX XXX XXXX'],
+      content: ['+91 9092552525'],
     },
   ];
 

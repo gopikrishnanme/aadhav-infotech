@@ -1,6 +1,17 @@
 import { Target, Lightbulb, Award, Code, Cpu, Globe, Users, Briefcase, CheckCircle, Star, Quote, Rocket, ArrowRight } from 'lucide-react';
 
-export default function Home() {
+interface HomeProps {
+  onNavigate?: (page: string) => void;
+}
+
+export default function Home({ onNavigate }: HomeProps) {
+  const handleNavigate = (page: string) => {
+    if (onNavigate) {
+      onNavigate(page);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
   const stats = [
     { value: '50+', label: 'Happy Clients', icon: Users },
     { value: '100+', label: 'Projects Completed', icon: Briefcase },
@@ -71,12 +82,18 @@ export default function Home() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="group px-8 py-4 bg-brand-green text-white font-semibold rounded-full hover:bg-brand-green-hover hover:shadow-2xl hover:shadow-brand-green/30 transition-all duration-300 flex items-center justify-center space-x-2">
+            <button 
+              onClick={() => handleNavigate('services')}
+              className="group px-8 py-4 bg-brand-green text-white font-semibold rounded-full hover:bg-brand-green-hover hover:shadow-2xl hover:shadow-brand-green/30 transition-all duration-300 flex items-center justify-center space-x-2"
+            >
               <Rocket size={20} />
               <span>Get Started</span>
               <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
             </button>
-            <button className="px-8 py-4 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-full border border-white/30 hover:bg-white/20 transition-all duration-300">
+            <button 
+              onClick={() => handleNavigate('innovation')}
+              className="px-8 py-4 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-full border border-white/30 hover:bg-white/20 transition-all duration-300"
+            >
               Learn More
             </button>
           </div>
@@ -290,11 +307,17 @@ export default function Home() {
             Let's build something amazing together. Get in touch with our team today.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="group px-8 py-4 bg-brand-green text-white font-semibold rounded-full hover:bg-brand-green-hover hover:shadow-2xl hover:shadow-brand-green/30 transition-all duration-300 flex items-center justify-center space-x-2">
+            <a 
+              href="mailto:services@aadhavinfotech.in"
+              className="group px-8 py-4 bg-brand-green text-white font-semibold rounded-full hover:bg-brand-green-hover hover:shadow-2xl hover:shadow-brand-green/30 transition-all duration-300 flex items-center justify-center space-x-2"
+            >
               <span>Contact Us</span>
               <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-            </button>
-            <button className="px-8 py-4 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-full border border-white/30 hover:bg-white/20 transition-all duration-300">
+            </a>
+            <button 
+              onClick={() => handleNavigate('services')}
+              className="px-8 py-4 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-full border border-white/30 hover:bg-white/20 transition-all duration-300"
+            >
               View Our Services
             </button>
           </div>

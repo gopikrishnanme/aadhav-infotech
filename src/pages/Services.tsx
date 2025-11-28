@@ -96,11 +96,14 @@ export default function Services() {
               </p>
             </div>
             <div className="flex-shrink-0">
-              <button className="group px-6 py-3 bg-brand-green text-white font-semibold rounded-full hover:bg-brand-green-hover hover:shadow-lg hover:shadow-brand-green/25 transition-all duration-300 flex items-center space-x-2">
+              <a 
+                href="mailto:services@aadhavinfotech.in?subject=Quote Request"
+                className="group px-6 py-3 bg-brand-green text-white font-semibold rounded-full hover:bg-brand-green-hover hover:shadow-lg hover:shadow-brand-green/25 transition-all duration-300 flex items-center space-x-2"
+              >
                 <Rocket size={18} />
                 <span>Get a Quote</span>
                 <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -137,15 +140,9 @@ export default function Services() {
                   </h3>
                   
                   {/* Description */}
-                  <p className="text-brand-dark/70 leading-relaxed mb-6">
+                  <p className="text-brand-dark/70 leading-relaxed">
                     {service.description}
                   </p>
-                  
-                  {/* Learn More Link */}
-                  <button className="inline-flex items-center text-brand-green font-semibold hover:text-brand-accent transition-colors group/btn">
-                    <span>Learn More</span>
-                    <ArrowRight size={16} className="ml-2 group-hover/btn:translate-x-1 transition-transform" />
-                  </button>
                 </div>
                 
                 {/* Hover Overlay */}
@@ -165,10 +162,13 @@ export default function Services() {
           <p className="text-lg text-brand-dark/70 mb-8">
             We specialize in building tailored software solutions that fit your unique business needs.
           </p>
-          <button className="group px-8 py-4 bg-brand-dark text-white font-semibold rounded-full hover:bg-brand-mid hover:shadow-xl transition-all duration-300 flex items-center space-x-2 mx-auto">
+          <a 
+            href="mailto:services@aadhavinfotech.in?subject=Custom Solution Inquiry"
+            className="group px-8 py-4 bg-brand-dark text-white font-semibold rounded-full hover:bg-brand-mid hover:shadow-xl transition-all duration-300 flex items-center space-x-2 mx-auto"
+          >
             <span>Contact Our Team</span>
             <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-          </button>
+          </a>
         </div>
       </section>
     </div>

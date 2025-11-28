@@ -1,4 +1,4 @@
-import { Briefcase, Clock, DollarSign, CheckCircle, Rocket, Users, Award, Heart, Globe, ArrowRight, GraduationCap, Cpu, Brain, Zap } from 'lucide-react';
+import { Briefcase, Clock, DollarSign, Rocket, Users, Award, Heart, Globe, ArrowRight, GraduationCap, Cpu, Brain, Zap } from 'lucide-react';
 
 export default function JobsInterns() {
   const benefits = [
@@ -154,10 +154,13 @@ export default function JobsInterns() {
                           </span>
                         </div>
                       </div>
-                      <button className="px-4 py-2 rounded-full bg-brand-green text-white font-semibold hover:bg-brand-green-hover hover:shadow-lg hover:shadow-brand-green/25 transition-all duration-300 flex items-center space-x-1 text-sm">
+                      <a 
+                        href={`mailto:services@aadhavinfotech.in?subject=Job Application - ${job.title}`}
+                        className="px-4 py-2 rounded-full bg-brand-green text-white font-semibold hover:bg-brand-green-hover hover:shadow-lg hover:shadow-brand-green/25 transition-all duration-300 flex items-center space-x-1 text-sm"
+                      >
                         <span>Apply</span>
                         <ArrowRight size={14} />
-                      </button>
+                      </a>
                     </div>
                   </div>
                 ))}
@@ -213,10 +216,13 @@ export default function JobsInterns() {
                       ))}
                     </div>
                     
-                    <button className="w-full px-4 py-3 rounded-xl bg-brand-green text-white font-semibold hover:bg-brand-green-hover hover:shadow-lg hover:shadow-brand-green/25 transition-all duration-300 flex items-center justify-center space-x-2">
+                    <a 
+                      href={`mailto:services@aadhavinfotech.in?subject=Internship Application - ${internship.title}`}
+                      className="mt-4 w-full py-3 rounded-full bg-brand-green text-white font-semibold hover:bg-brand-green-hover hover:shadow-lg hover:shadow-brand-green/25 transition-all duration-300 flex items-center justify-center space-x-2"
+                    >
                       <span>Apply Now</span>
                       <ArrowRight size={16} />
-                    </button>
+                    </a>
                   </div>
                 ))}
               </div>
@@ -234,10 +240,13 @@ export default function JobsInterns() {
           <p className="text-xl text-white/80 mb-8">
             We're always looking for talented individuals. Send us your resume and we'll keep you in mind for future opportunities.
           </p>
-          <button className="group px-8 py-4 bg-brand-green text-white font-semibold rounded-full hover:bg-brand-green-hover hover:shadow-2xl hover:shadow-brand-green/30 transition-all duration-300 flex items-center space-x-2 mx-auto">
+          <a 
+            href="mailto:services@aadhavinfotech.in?subject=Resume Submission"
+            className="group px-8 py-4 bg-brand-green text-white font-semibold rounded-full hover:bg-brand-green-hover hover:shadow-2xl hover:shadow-brand-green/30 transition-all duration-300 flex items-center space-x-2 mx-auto inline-flex"
+          >
             <span>Send Your Resume</span>
             <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-          </button>
+          </a>
         </div>
       </section>
     </div>

@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone, Linkedin, Twitter, Facebook, ArrowUp, Rocket, ChevronRight } from 'lucide-react';
+import { Mail, MapPin, Phone, ArrowUp, Rocket, ChevronRight } from 'lucide-react';
 import logo from '../logo.jpg';
 
 export default function Footer() {
@@ -46,23 +46,6 @@ export default function Footer() {
             <p className="text-white/70 text-sm mb-6 leading-relaxed">
               Pioneering technology solutions for next-generation businesses. We transform ideas into digital reality.
             </p>
-            {/* Social Links */}
-            <div className="flex space-x-3">
-              {[
-                { icon: Linkedin, href: '#', label: 'LinkedIn' },
-                { icon: Twitter, href: '#', label: 'Twitter' },
-                { icon: Facebook, href: '#', label: 'Facebook' },
-              ].map((social, index) => (
-                <a
-                  key={index}
-                  href={social.href}
-                  aria-label={social.label}
-                  className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-brand-green hover:scale-110 transition-all duration-300"
-                >
-                  <social.icon size={18} />
-                </a>
-              ))}
-            </div>
           </div>
 
           {/* Quick Links */}
@@ -125,7 +108,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center space-x-3">
                 <Phone size={18} className="text-brand-green flex-shrink-0" />
-                <span className="text-white/70 text-sm">+91 XXX XXX XXXX</span>
+                <a href="tel:+919092552525" className="text-white/70 hover:text-brand-green transition-colors text-sm">+91 9092552525</a>
               </li>
             </ul>
           </div>

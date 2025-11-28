@@ -39,9 +39,6 @@ export default function Navigation({ currentPage, onNavigate }: NavigationProps)
                 alt="Aadhav Infotech"
                 className="h-10 w-auto rounded-lg shadow-sm group-hover:shadow-md transition-shadow"
               />
-              <span className="text-lg font-bold text-brand-dark hidden sm:inline group-hover:text-brand-green transition-colors">
-                Aadhav Infotech
-              </span>
             </button>
           </div>
 
