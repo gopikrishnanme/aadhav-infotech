@@ -154,8 +154,6 @@ export default function Contact() {
                 <div className="space-y-3">
                   {[
                     { day: 'Monday - Friday', hours: '9:00 AM - 6:00 PM', active: true },
-                    { day: 'Saturday', hours: '9:00 AM - 1:00 PM', active: true },
-                    { day: 'Sunday', hours: 'Closed', active: false },
                   ].map((schedule, i) => (
                     <div key={i} className="flex justify-between items-center py-2 border-b border-brand-dark/5 last:border-0">
                       <span className="text-brand-dark/80">{schedule.day}</span>
