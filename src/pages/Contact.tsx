@@ -33,7 +33,7 @@ export default function Contact() {
     {
       icon: MapPin,
       title: 'Visit Us',
-      content: ['#5, 4th cross, Shetty Building, GS Palaya Road, Electronics City Phase 2, Bangalore 560100, Karnataka 560100, INDIA'],
+      content: ['5th Floor, Maruthi Concorde Business Park, Konappana Agrahara, Electronic City, Bengaluru, Karnataka 560100, INDIA'],
     },
     {
       icon: Mail,
