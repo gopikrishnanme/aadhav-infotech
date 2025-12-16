@@ -33,7 +33,7 @@ export default function Contact() {
     {
       icon: MapPin,
       title: 'Visit Us',
-      content: ['Plot No.11, IT Park, Auto Nagar', 'Mangalagiri, Guntur - 522503', 'Andhra Pradesh, INDIA'],
+      content: ['#5, 4th cross, Shetty Building, GS Palaya Road, Electronics City Phase 2, Bangalore 560100, Karnataka 560100, INDIA'],
     },
     {
       icon: Mail,
