@@ -114,23 +114,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* CTA Banner */}
-        <div className="bg-gradient-to-r from-brand-mid to-brand-dark border border-white/10 rounded-2xl p-6 mb-8">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <div className="text-center md:text-left">
-              <h4 className="font-bold text-white mb-1">Ready to Start Your Project?</h4>
-              <p className="text-white/70 text-sm">Let's discuss how we can help transform your business.</p>
-            </div>
-            <a
-              href="/contact"
-              className="inline-flex items-center px-6 py-3 bg-brand-green text-white rounded-full font-semibold hover:bg-brand-green-hover hover:shadow-lg hover:shadow-brand-green/25 transition-all duration-300 whitespace-nowrap"
-            >
-              <Rocket size={18} className="mr-2" />
-              Get Started
-            </a>
-          </div>
-        </div>
-
         {/* Bottom Bar */}
         <div className="border-t border-white/10 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
