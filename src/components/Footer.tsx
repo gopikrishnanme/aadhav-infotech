@@ -93,8 +93,8 @@ export default function Footer() {
               <li className="flex items-start space-x-3">
                 <MapPin size={18} className="text-brand-green flex-shrink-0 mt-0.5" />
                 <span className="text-white/70 text-sm">
-                  Plot No.11, IT Park, Auto Nagar<br />
-                  Mangalagiri, Guntur - 522503
+                  5th Floor, Maruthi Concorde Business Park, Konappana Agrahara, <br />
+                  Electronic City, Bengaluru, Karnataka 560100, INDIA
                 </span>
               </li>
               <li className="flex items-center space-x-3">
