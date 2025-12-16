@@ -16,29 +16,52 @@ export default function JobsInterns() {
   ];
 
   const internships = [
-    {
-      title: 'Internship on IoT',
-      duration: '6 Months',
-      stipend: '6k - 10k per month',
-      icon: Cpu,
-      skills: ['Arduino', 'Sensors', 'Embedded Systems'],
-    },
-    {
-      title: 'Data Science',
-      duration: '6 Months',
-      stipend: '6k - 10k per month',
-      icon: Brain,
-      skills: ['Python', 'ML', 'Statistics'],
-    },
-    {
-      title: 'Machine Learning',
-      duration: '6 Months',
-      stipend: '6k - 10k per month',
-      icon: Zap,
-      skills: ['TensorFlow', 'Neural Networks', 'Python'],
-    },
-  ];
-
+  {
+    title: 'Backend & Cloud Engineering Intern',
+    duration: '4–6 Months',
+    stipend: 'Paid (Performance-based)',
+    icon: Cpu,
+    skills: [
+      'Java / Python / Go',
+      'Spring Boot / FastAPI',
+      'PostgreSQL / MongoDB / Redis',
+      'Apache Kafka',
+      'Docker & Kubernetes',
+      'AWS / Azure / GCP',
+      'CI/CD (GitHub Actions)'
+    ],
+  },
+  {
+    title: 'AI / ML & Data Engineering Intern',
+    duration: '4–6 Months',
+    stipend: 'Paid',
+    icon: Brain,
+    skills: [
+      'Python',
+      'Scikit-learn',
+      'TensorFlow / PyTorch',
+      'Pandas & NumPy',
+      'Apache Kafka',
+      'ML Model Deployment (FastAPI)',
+      'Docker'
+    ],
+  },
+  {
+    title: 'DevOps & Platform Engineering Intern',
+    duration: '3–5 Months',
+    stipend: 'Certificate + Incentives',
+    icon: Zap,
+    skills: [
+      'Linux & Shell Scripting',
+      'Docker',
+      'Kubernetes',
+      'CI/CD (Jenkins / GitHub Actions)',
+      'Nginx',
+      'Prometheus & Grafana',
+      'Cloud Security Basics'
+    ],
+  },
+];
   return (
     <div className="overflow-hidden">
       {/* Hero Section */}
