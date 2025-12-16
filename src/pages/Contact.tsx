@@ -132,8 +132,7 @@ export default function Contact() {
                   </h3>
                 </div>
                 <div className="aspect-video">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.123456789!2d80.4567!3d16.4321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTbCsDI1JzU1LjYiTiA4MMKwMjcnMjQuMSJF!5e0!3m2!1sen!2sin!4v1234567890"
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1353.0751080181797!2d80.56028443819321!3d16.421050575767342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1765898428358!5m2!1sen!2sin"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
